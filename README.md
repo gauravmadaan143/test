@@ -28,8 +28,8 @@ This is a standard template to verify the structure of a job:
 The SCM module allows you to specify the source code location for the project.
 It adds the scm attribute to the Job definition, which accepts any number of scm definitions. 
 It is also possible to pass [] to the scm attribute. This is useful when a set of configs has a global default scm and you want to a particular job to override that default with no SCM.
-### Macro:					scm
-### Entry Point:			jenkins_jobs.scm
+#### Macro:					scm
+#### Entry Point:			jenkins_jobs.scm
 
 Parameters as listed below:-
 
