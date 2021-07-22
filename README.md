@@ -40,13 +40,13 @@ Parameters as listed below:-
 * choosing-strategy: (string) - Jenkins class for selecting what to build. Can be one of default,`inverse`, or gerrit (default ‘default’)
 * jenkins-ssh-credential: credentials-id (str) – ID of credentials to use to connect (optional)
 * submodule as below (dict): 
-		* disable (bool)-By disabling support for submodules you can still keep using git plugin functionality & just have Jenkins to ignore submodules completely.
-		* recursive (bool) - Retrieve all submodules recursively (uses ‘–recursive’ option which requires git>=1.6.5)
-		* tracking (bool) - Retrieve the tip of the configured branch in .gitmodules (Uses ‘–remote’ option which requires git>=1.8.2)
-		* parent-credentials (bool) - Use credentials from default remote of parent repository (default false).
-		* reference-repo (str) - Path of the reference repo to use during clone (optional)
-		* timeout (int) - Specify a timeout (in minutes) for submodules operations (default 10).
 
+* disable (bool) - By disabling support for submodules you can still keep using basic git plugin functionality and just have Jenkins to ignore submodules completely as if they didn’t exist.
+* recursive (bool) - Retrieve all submodules recursively (uses ‘–recursive’ option which requires git>=1.6.5)
+* tracking (bool) - Retrieve the tip of the configured branch in .gitmodules (Uses ‘–remote’ option which requires git>=1.8.2)
+* parent-credentials (bool) - Use credentials from default remote of parent repository (default false).
+* reference-repo (str) - Path of the reference repo to use during clone (optional)
+* timeout (int) - Specify a timeout (in minutes) for submodules operations (default 10).
 
 
 #### Module: triggers
